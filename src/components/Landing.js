@@ -26,6 +26,8 @@ class Landing extends React.Component {
     })
   }
 
+  goToRestaraunt = () => {}
+
   render() {
     return (
       <div className="restaraunt_select">
@@ -59,7 +61,7 @@ class Landing extends React.Component {
           </div>
         ) : null}
         {this.state.title && !this.state.display ? (
-          <button>Перейти в ресторан</button>
+          <button onClick={this.goToRestaraunt}>Перейти в ресторан</button>
         ) : null}
       </div>
     )
